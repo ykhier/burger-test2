@@ -24,7 +24,9 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out; /* Transition the transform property */
 }
-
+    .burger-card:hover {
+        transform: scale(1.05); /* Apply the scale transform on hover */
+    }
 .burger-image {
     width: 150px;
     height: 100%;
@@ -66,7 +68,6 @@ body {
     .order-button:hover {
         background-color: #ff3013;
     }
-
 
 @media screen and (max-width: 600px) {
     body {
