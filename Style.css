@@ -1,0 +1,199 @@
+
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact {
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+
+textarea {
+    resize: none;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+button {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+.icon-container {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.icon-link {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+    .icon-link:hover {
+        color: #007bff;
+    }
+
+nav {
+    padding-top:19px;
+    width:50vw;
+    margin:auto;
+    margin-top:20px;
+    align-items:center;
+    display:flex;
+    justify-content:space-around;
+}
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: color .3s transform .3s;
+}
+a:before,
+a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: orangered;
+    transition: width .5s,background-color .5s,transform .3s;
+}
+a:after {
+    left: 0;
+    bottom: -10px;
+}
+a:before {
+    right: 0;
+    top: -10px;
+}
+a:hover:after {
+    width: 100%;
+    background-color: #3498db;
+    transform: translateY(-5px);
+}
+a:hover:before {
+    width: 100%;
+    background-color: #3498db;
+    transform: translateY(5px);
+}
+a:hover {
+    color: black;
+}
+a:focus, a:active {
+    background-color: transparent !important;
+    /* You can also add other styles as needed */
+    outline: none; /* Remove the outline (often a border) around the element */
+}
+/* Media query for screens smaller than 600px (typical mobile screens) */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+        place-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 12px;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    nav a {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+}

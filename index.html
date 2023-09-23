@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style.css"> <!-- Link to your CSS file -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("61tcq9CV5AJ8117eD");
+        })();
+    </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!-- Font Awesome icons -->
+    <title>Yosef Site</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" id="custom-link"> Home </a>
+            <a href="menu-html.html" id="custom-link"> Menu </a>
+            <a href="#" id="custom-link"> About </a>
+            <a href="#" id="custom-link"> Contact </a>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="icon-container">
+                <a href="https://www.instagram.com/yosef_kh98" class="icon-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/0542077433" class="icon-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:yosef3125123@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+972542077433" class="icon-link"><i class="fas fa-phone"></i></a>
+            </div>
+            <p>We'd love to hear from you. Please use the form below to get in touch with us.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="button" id="send-button" onclick="sendEmail()">Send Message</button>
+                <span id="status-message"> </span>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100vh;
+
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 65%;
+    margin-top: 70px;
+    justify-content: center;
+}
+.burger-card {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin:10px;
+    border-radius:8px; 
+}
+
+.burger-image {
+    width: 150px;
+    height: 100%;
+    border-radius: 8px 0px 8px 8px;
+}
+
+.burger-details {
+    padding: 16px;
+    max-width:130px;
+}
+
+.burger-name {
+    font-size: 18px;
+    margin: 0;
+}
+
+.burger-description {
+    font-size: 14px;
+    color: #666;
+}
+
+.burger-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.order-button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+    .order-button:hover {
+        background-color: #ff3013;
+    }
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust the overall font size for better mobile readability */
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .burger-card {
+        width: 300px; /* Adjust the fixed width as per your design */
+        margin: 10px 0; /* Add margin to separate cards on small screens */
+    }
+
+    .burger-image {
+        width: auto;
+        max-width: 50%; /* Limit maximum width to 50% */
+        height: auto; /* Maintain image aspect ratio */
+    }
+
+    .burger-details {
+        max-width: 100%;
+        padding: 10px; /* Add padding for better spacing */
+        /* Remove or omit the overflow property to allow text to wrap naturally */
+    }
+
+    .burger-name {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .burger-description {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .burger-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .order-button {
+        font-size: 16px; /* Adjust button font size for smaller screens */
+        padding: 10px 20px; /* Increase button padding for better tapability on touch devices */
+        background-color: #ff5733; /* Background color */
+        color: white; /* Text color */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .order-button:hover {
+            background-color: #ff3013; /* Hover background color */
+        }
+}
