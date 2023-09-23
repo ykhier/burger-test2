@@ -20,3 +20,21 @@ function sendEmail() {
         .catch(err => console.log(err));
 
 }
+
+function cardClicked() {
+    const cards = document.querySelectorAll('.burger-card');
+
+    cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+            // Apply a transform to the clicked card
+            card.style.transform = 'scale(1.05)';
+
+            // Reset the other cards to their initial state
+            cards.forEach((otherCard, otherIndex) => {
+                if (index !== otherIndex) {
+                    otherCard.style.transform = 'scale(1)';
+                }
+            });
+        });
+    });
+}
